@@ -150,6 +150,14 @@ h6 {
 .navbar-nav .nav-item .nav-link:hover::after {
     width: 100%;
 }
+
+.hero-section {
+    position: relative;
+    z-index: 13;
+}
+.hero-section .swiper-container {
+    overflow: unset;
+}
 .swiper-slide {
     padding-bottom: 280px;
     position: relative;
