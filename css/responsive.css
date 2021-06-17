@@ -1,13 +1,40 @@
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .box .details {
+        padding: 0 30px !important;
+    }
+    .promo-item {
+        padding: 90px 0px 0 0;
+    }
+    .team-thumb {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .contact-btn {
+        margin-bottom: 30px;
+    }
+    .work-row-two .col-xl-3:last-child .box {
+        transform: translateY(0);
+    }
+    .contact-box {
+        text-align: center;
+        margin-bottom: 25px;
+    }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .swiper-slide {
+        padding-bottom: 185px;
+    }
+    .slider-bg {
+        display: none;
+    }
     .slider-info {
         max-width: 100%;
         width: 100%;
         text-align: center;
+        padding-top: 30px;
     }
     .slider-bg {
         display: none;
@@ -18,6 +45,7 @@
     }
     .promo-item {
         text-align: center;
+        padding-right: 0;
     }
     .promo-item:last-child {
         padding-right: 0;
@@ -50,6 +78,9 @@
     .info-box::before {
         display: none;
     }
+    .work-row-two .col-xl-3:last-child .box {
+        transform: translateY(0);
+    }
     .blog-box {
         text-align: center;
     }
@@ -69,7 +100,11 @@
     }
     .contact {
         margin-bottom: 0;
-        padding-bottom: 60;
+        padding-bottom: 60px;
+    }
+    .contact-box {
+        text-align: center;
+        margin-bottom: 25px;
     }
     .map-view {
         color: #fff;
@@ -79,14 +114,15 @@
         color: #ae8370 !important;
         text-align: center;
         margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .footer-social {
+        margin-top: 30px;
     }
 }
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .slider-bg {
-        display: none;
-    }
     .work-row-three .box {
         transform: translateY(0);
     }
@@ -116,7 +152,7 @@
         margin: 0 auto;
     }
     .box .details {
-        padding: 0 115px;
+        padding: 0 15px;
     }
     .work-bg {
         padding: 45px 0 0 0;

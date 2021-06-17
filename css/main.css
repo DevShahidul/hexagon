@@ -155,9 +155,7 @@ h6 {
     position: relative;
     z-index: 13;
 }
-.hero-section .swiper-container {
-    overflow: unset;
-}
+
 .swiper-slide {
     padding-bottom: 280px;
     position: relative;
