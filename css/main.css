@@ -153,7 +153,8 @@ h6 {
 
 .hero-section {
     position: relative;
-    z-index: 13;
+    z-index: 3;
+    padding-bottom: 10px;
 }
 
 .swiper-slide {
@@ -173,8 +174,15 @@ h6 {
     padding-top: 110px;
 }
 .slider-info h2 {
-    font-weight: 800;
+    font-weight: 900;
+    font-size: 65px;
 }
+
+.slider-info h2 span{
+    font-size: 44px;
+    font-weight: 400;
+}
+
 .slider-info h2 span {
     font-weight: 700;
     font-size: 44px;
@@ -192,14 +200,15 @@ h6 {
     background-size: 5px;
 }
 .slider-nav {
-    padding: 50px;
+    width: 86px;
+    height: 103px;
     position: absolute;
     left: 50%;
     bottom: 0;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
     background: #ff8853;
     z-index: 200;
 }
@@ -223,7 +232,9 @@ h6 {
 
 .promo-section {
     position: relative; /*margin-top: -220px;*/
-    z-index: 10;
+    z-index: 5;
+    margin-top: -346px;
+    clip-path: polygon(0 0, 50% 345px, 100% 0, 100% 100%, 0 100%);
 }
 .bg-left,
 .bg-right {
@@ -255,48 +266,85 @@ h6 {
 }
 
 .promo-item {
-    padding: 190px 50px 0 0;
+    padding-top: 245px;
 }
-.promo-item h3 {
+.promo-item:first-child {
+    background-color: #d3bba3;
+    /* clip-path: polygon(0 0, 100% 346px, 100% 100%, 0 100%); */
+}
+.promo-item .promo-content{
+    max-width: 450px;
+    text-align: left;
+    float: right;
+    display: flex;
+    flex-flow: row wrap;
+}
+.promo-item h3,
+.promo-item h6 {
     line-height: 38px;
+    font-size: 48px;
+    font-weight: 900;
+}
+.promo-item h6{
+    font-size: 24px;
+}
+.promo-item .text-wrap{
+    max-width: 245px;
+    text-align: left;
 }
 .promo-item figure {
     padding-top: 15px;
-    transform: translateY(15px);
+    text-align: center;
+    margin-bottom: 0;
+    align-self: flex-end;
 }
 .promo-item figure img {
-    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
-.promo-item:last-child h6,
-.promo-item:last-child h3 {
-    float: right;
+.promo-item:last-child{
+    background: #dae5e7;
+    /* clip-path: polygon(0 346px, 100% 0, 100% 100%, 0 100%); */
 }
-.promo-item:last-child h6 {
-    width: 100%;
-    text-align: right;
-    padding-right: 30px;
+.promo-item:last-child  .text-wrap{
+    margin-left: auto;
+    max-width: 181px;
 }
-.promo-item:last-child {
-    padding-right: 0;
-    padding-left: 50px;
+.promo-item:last-child .promo-content {
+    float: left;
 }
-.promo-item:last-child figure {
-    transform: translateY(30px);
-}
-.label {
+
+
+.promo-content .label {
+    width: 100px;
+    height: 117px;
     position: absolute;
-    left: -50px;
+    right: auto;
+    left: 0px;
     bottom: 0;
     font-size: 18px;
     line-height: 18px;
     font-weight: 800;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(0 30px, 50% 0, 100% 30px, 100% 90px, 50% 100%, 0% 100%);
     background: white;
-    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.promo-item:last-child .label {
+
+.promo-content .label span{
+    max-width: 70px;
+    text-align: center;
+    color: #bfa6a2;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.promo-item:last-child .promo-content .label {
     left: auto;
-    right: -50px;
+    right: 0px;
+    clip-path: polygon(0 30px, 50% 0, 100% 30px, 100% 100%, 50% 100%, 0% 90px);
 }
 
 .bottom-bg {
@@ -323,14 +371,23 @@ h6 {
     margin-bottom: 3px;
 }
 
-.section-title p {
+.section-title p,
+.section-title div {
     color: #ae8370;
     font-size: 18px;
     line-height: 22px;
+    max-width: 750px;
+    margin-right: auto;
+    margin-left: auto;
 }
-.section-title p b {
+.section-title p b,
+.section-title div strong {
     font-size: 18px;
     font-weight: 900;
+}
+
+.section-title > div:last-child{
+    margin-top: 15px;
 }
 
 .paragraph-text {
@@ -349,6 +406,10 @@ h6 {
     position: relative;
     z-index: 2;
     margin-bottom: -185px;
+}
+
+.our-team .team-title{
+    margin-top: 30px;
 }
 
 .team-title h4 {
