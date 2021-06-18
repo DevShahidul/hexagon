@@ -262,6 +262,7 @@ h6 {
 }
 .promo-item figure {
     padding-top: 15px;
+    transform: translateY(15px);
 }
 .promo-item figure img {
     width: 100%;
@@ -278,6 +279,9 @@ h6 {
 .promo-item:last-child {
     padding-right: 0;
     padding-left: 50px;
+}
+.promo-item:last-child figure {
+    transform: translateY(30px);
 }
 .label {
     position: absolute;
@@ -590,6 +594,16 @@ h6 {
 .box-btn .work-btn > b {
     font-weight: 900;
     display: block;
+}
+
+.work-row-one .col-xl-3:nth-child(5) .box {
+    transform: translateY(-65px);
+}
+.work-row-one .col-xl-3:nth-child(6) .box {
+    transform: translateY(-65px);
+}
+.work-row-one .col-xl-3:nth-child(7) .box {
+    transform: translateY(-65px);
 }
 
 .work-row-two .col-xl-3:first-child .box {

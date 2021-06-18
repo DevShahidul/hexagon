@@ -1,7 +1,8 @@
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .box .details {
-        padding: 0 30px !important;
+        padding: 0 90px !important;
+        top: 80px;
     }
     .promo-item {
         padding: 90px 0px 0 0;
@@ -13,8 +14,18 @@
     .contact-btn {
         margin-bottom: 30px;
     }
-    .work-row-two .col-xl-3:last-child .box {
-        transform: translateY(0);
+    .work-row-three .box {
+        transform: translateY(0) !important;
+    }
+    .wish-info {
+        max-width: 100% !important;
+        margin-top: 25px;
+        margin: 0 auto;
+    }
+    .number-box {
+        float: none;
+        margin-top: 30px !important;
+        margin-right: 0;
     }
     .contact-box {
         text-align: center;
@@ -78,7 +89,7 @@
     .info-box::before {
         display: none;
     }
-    .work-row-two .col-xl-3:last-child .box {
+    .work-row-three .box {
         transform: translateY(0);
     }
     .blog-box {
@@ -93,9 +104,15 @@
         margin: 0 auto;
         text-align: center;
     }
+    .wish-info {
+        max-width: 100%;
+        margin-top: 25px;
+        margin: 0 auto;
+    }
+
     .number-box {
         float: none;
-        margin-top: 20px;
+        margin-top: 30px !important;
         margin-right: 0;
     }
     .contact {
@@ -131,6 +148,13 @@
         height: 175px;
         background-color: #ae8370;
     }
+    .wish-info {
+        max-width: 430px;
+        margin-top: 3px;
+    }
+    .number-box {
+        margin-top: -135px;
+    }
 }
 
 /* // Large devices (desktops, less than 1200px) */
@@ -152,16 +176,23 @@
         margin: 0 auto;
     }
     .box .details {
-        padding: 0 15px;
+        padding: 0 50px;
     }
     .work-bg {
         padding: 45px 0 0 0;
     }
-    .work-row-two .col-xl-3:first-child .box {
-        transform: translateY(0px);
+
+    .work-row-one .col-xl-3:nth-child(5) .box {
+        transform: translateY(0);
     }
-    .work-row-two .col-xl-3:nth-child(2) .box {
-        transform: translateY(0px);
+    .work-row-one .col-xl-3:nth-child(6) .box {
+        transform: translateY(0);
+    }
+    .work-row-one .col-xl-3:nth-child(7) .box {
+        transform: translateY(0);
+    }
+    .work-row-three .box {
+        transform: translateY(-65px);
     }
     .services {
         margin-top: 0;
